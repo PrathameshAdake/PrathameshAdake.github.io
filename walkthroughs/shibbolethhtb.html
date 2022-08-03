@@ -1,0 +1,454 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c7 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 26pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c4 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 17pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c2 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c0 {
+            text-decoration-skip-ink: none;
+            font-size: 17pt;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c9 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c6 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c3 {
+            height: 11pt
+        }
+
+        .c5 {
+            font-size: 17pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c9 doc-content">
+    <p class="c8 title" id="h.g1xp1cuqa9u5"><span class="c7">HACKTHEBOX SHIBBOLETH WALKTHROUGH</span></p>
+    <p class="c2 c3"><span class="c4"></span></p>
+    <p class="c2 c3"><span class="c4"></span></p>
+    <p class="c2"><span class="c1">The IP address is mapped to a domain name so first we&rsquo;ll map the IP address
+            with the domain in our /etc/hosts</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image17.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Then we do directory searching but no useful information so we do more domain
+            searching using gobuster -vhost and using seclists DNS wordlist</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image24.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">On all the other domains we are required username and password to log into the
+            site.</span></p>
+    <p class="c2"><span class="c1">Also we do nmap scan but no useful information except the port 80 so we start
+            scanning all ports using TCP and UDP scans and we find port 623 open using udp ipmi. </span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image12.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">So now we use msfconsole to confirm the vulnerability of &ldquo;UDP IPMI&rdquo; on
+            port 623 </span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image6.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image20.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">The vulnerability is confirmed on port 623 hence we can start our exploitation using
+            &ldquo;ipmitool&rdquo;. If you don&#39;t have that, install it using sudo apt install ipmitool.</span></p>
+    <p class="c2"><span class="c5">And follow the syntax on this website: </span><span class="c0"><a class="c6"
+                href="https://www.google.com/url?q=https://book.hacktricks.xyz/pentesting/623-udp-ipmi&amp;sa=D&amp;source=editors&amp;ust=1659521767911734&amp;usg=AOvVaw0vO93LS0pgorXU8SNHN_44">623/UDP/TCP
+                - IPMI - HackTricks</a></span></p>
+    <p class="c2"><span class="c1">We try many default usernames of the ipmi and find these working.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image25.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image15.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Now we retrieve the IPMI hashed password used by the Administrator using ipmi
+            hashdump in msfconsole.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image5.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">And login to the zabbix domain using the cracked hash password and with the username
+            as Administrator:</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image9.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">And we are successfully able to log in to the website and access it as
+            Administrator.</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image29.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Now we start scanning for vulnerabilities and find host tab.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image16.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Now click on the shibboleth.htb tab and go to it&rsquo;s configuration.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image23.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Now go to the items tab and create one item.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image27.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Type the name as reverse shell and in the Key section select
+            system.run[&lt;command&gt;,&lt;mode&gt;] and type in the following reverse shell command binding to our tun0
+            IP address and using any open port for that. In place of &lt;mode&gt; we&rsquo;ll use
+            &ldquo;nowait&rdquo;</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image8.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image14.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Binding IP and port number of our tun0 and then testing it.</span></p>
+    <p class="c2"><span class="c1">And now add the reverse shell item and then find it among the many items which are
+            added by the Administrator.</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image10.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Now click on it and check our reverse shell and then set up a netcat listener on the
+            port specified (4444 in my case) in the reverse shell and then click on the test option.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image28.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">After clicking on &ldquo;Accept value and test&rdquo; we get a shell on our netcat
+            listener.</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image7.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Now we stabilize our shell and start further enumeration.</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image2.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Now we search for more users on the system and we find a user named
+            &ldquo;ipmi-svc&rdquo; so we try logging into that user using the same password used for Administrator on
+            zabbix.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image3.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">And then we find the user flag in the home directory of &ldquo;ipmi-svc&rdquo;
+        </span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image22.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Then we start to search for zabbix as it might have some configurations which we can
+            use to escalate our privileges.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image11.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c1">Then in the server conf file we find DBName=zabbix, DBUser=zabbix and password as
+            bloooarskybluh</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image1.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">And also that the database used is mariadb:</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image4.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2"><span class="c5">So now we searched for the vulnerabilities of the site and found that it is a
+            CVE-2021-27928 so we exploit it using this link as reference: </span><span class="c0"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/Al1ex/CVE-2021-27928&amp;sa=D&amp;source=editors&amp;ust=1659521767915986&amp;usg=AOvVaw3P2x8eoTYaq2Kq346uj2Al">GitHub
+                - Al1ex/CVE-2021-27928</a></span><span class="c1">&nbsp;</span></p>
+    <p class="c2"><span class="c1">So now we create a msfvenom payload and transfer it to the victim machine and also
+            keep nc port 5555 in listening mode.</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image18.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Get the payload using wget and then execute it using the following command:</span>
+    </p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image26.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Enter the previously obtained password:</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image21.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">Now after executing that we get the root shell on our netcat listener on port
+            5555:</span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image13.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c2 c3"><span class="c1"></span></p>
+    <p class="c2"><span class="c1">And finally we get the root flag:</span></p>
+    <p class="c2"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="shibbolethimages/image19.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+</body>
+
+</html>

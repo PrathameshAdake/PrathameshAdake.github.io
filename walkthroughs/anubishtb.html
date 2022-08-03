@@ -1,0 +1,763 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c2 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c9 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 30pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c1 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 17pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c0 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c4 {
+            text-decoration-skip-ink: none;
+            font-size: 17pt;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c7 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c6 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c3 {
+            height: 11pt
+        }
+
+        .c5 {
+            font-size: 17pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <p class="c8 title" id="h.wuw7kblp8t7m"><span class="c9">HACKTHEBOX ANUBIS WALKTHROUGH</span></p>
+    <p class="c0 c3"><span class="c2"></span></p>
+    <p class="c0"><span class="c1">First nmap results:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="anubisimages/image37.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Now as we see port 135 for msrpc which is microsoft remote procedure call and with
+            that port 445 is open so chances are SMB is present.</span></p>
+    <p class="c0"><span class="c5">So we&rsquo;ll check it using CME (crackmapexec) </span><span class="c4"><a
+                class="c6"
+                href="https://www.google.com/url?q=https://github.com/byt3bl33d3r/CrackMapExec/tree/master/cme&amp;sa=D&amp;source=editors&amp;ust=1659521119018065&amp;usg=AOvVaw2lkhcOEZSsSjV81vthPCwr">cme</a></span>
+    </p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image16.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">So we can see that SMB is present with name as EARTH and domain as
+            &ldquo;windcorp.htb&rdquo; so we&rsquo;ll make entries in our /etc/hosts:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image45.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image33.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Trying XSS on the contacts input field:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image64.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image1.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Since our port 443 is hit that means XSS or SSTI is present.</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image10.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Our script is not displayed but is present in the HTML source.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image65.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Now we&rsquo;ll check for SSTI vulnerability: </span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image30.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image21.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Now we&rsquo;ll remove characters till it throws an error:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image44.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image5.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Finally error is thrown for &lt;% which is syntax for VBScript</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image27.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">SO now we&rsquo;ll pass our reverse shell using this syntax:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image51.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">We&rsquo;ll write one Wscript to see who the owner is:</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image20.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Looks like owner is nt authority system, so now we&rsquo;ll get oneliner TCP reverse
+            shell from nishang </span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/samratashok/nishang&amp;sa=D&amp;source=editors&amp;ust=1659521119021027&amp;usg=AOvVaw2agpnVQHWHp6d7y9L7YsJc">Nishang
+                - Offensive PowerShell for red team, penetration testing and offensive security.</a></span><span
+            class="c1">:</span></p>
+    <p class="c0"><span class="c1">And pass in our IP address and port number: </span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image32.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Place our payload in www directory where python3 http.server is running.</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image63.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Now we&rsquo;ll create a WScript object and execute powershell which will call our
+            localhost and fetch the shell.ps1 payload for reverse shell and listen on port specified in payload which is
+            9001.</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">As nothing is pasted on the screen we can assume the payload is working:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image40.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Now we wait on the nc listener:</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image23.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We are using rlwrap with nc so that some additional functionalities are available of
+            the powershell</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image28.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">After checking the ipconfig it seems like we are in a container as the IP address is
+            different:</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image11.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">On the desktop of the container administrator we find one req.txt file so we check
+            it&rsquo;s contents and see a certificate, we get the file on our computer:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image52.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image57.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">On analyzing the file using openssl we find one more domain
+            softwareportal.windcorp.htb so we add it to our /etc/hosts and download chisel for windows and linux:
+        </span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/jpillora/chisel&amp;sa=D&amp;source=editors&amp;ust=1659521119022859&amp;usg=AOvVaw3gVgG9WLQRx1uTLxCdUy6n">https://github.com/jpillora/chisel</a></span>
+    </p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image4.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image7.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">And as the python3 http server is still hosted we curl the windows chisel on the
+            container machine:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image71.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image39.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Get chisel using curl.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image58.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">As chisel is working fine so we can set reverse port forwarding on our attacking
+            machine on &ndash;socks5 port 800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image55.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image3.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Down proxychains </span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/rofl0r/proxychains-ng&amp;sa=D&amp;source=editors&amp;ust=1659521119023948&amp;usg=AOvVaw1iqAdM6bHughJRReVwiFF8">https://github.com/rofl0r/proxychains-ng</a></span><span
+            class="c5">&nbsp;and i</span><span class="c1">n the /etc/proxychains setup the port number for socks5 as
+            1080 as that&rsquo;s where the chisel reverse port is being forwarded.</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image67.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image49.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image60.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Add one option to Burpsuite for for 1080 and in the pattern enable to query for only
+            site having windcorp.htb in their domain and after dong that visit the softwareportal.windcorp.htb on the
+            172.19.144.1 IP:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="anubisimages/image43.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image42.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image12.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We have mapped IP address 172.19.144.1 to softwareportal.windcorp.htb and now
+            checking if it has the same SMB name as the 10.10.11.102:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image13.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Looks Like they have the same smbclient connected. Since we know that smb is
+            communicating so we set up the &nbsp;responder tool to listen to the smb communication and get the
+            password.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image54.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Click on the jamovi download link on softwareportal.windcorp.htb and copy the link
+            and paste it in new tab replace the IP address with our machines tun0 address and setup wireshark on
+            tun0:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image19.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image25.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We capture many packets and it seems like the container communicates with the main
+            host to install any softwares and the request is going through port 5985 which allows remote clients to
+            connect to the system. Now we&rsquo;ll connect to the machine using remote access.</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image34.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">We find the smbclient password hash which is NTLMv2 hash so now we decrypt it using
+            john:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image17.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Got the password as Secret123 and user as </span><span class="c5">localadmin</span>
+    </p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image56.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">We search for all the shares of smbclient:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image66.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We join the Shared sharename of the smbclient:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image2.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image9.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Now we join the smb using the password which we cracked </span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image70.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image69.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">After enumeration we find omv files in Document\Analytics and there is a file named
+            Whatif.omv which is recently edited so getting the file using &ldquo;get Whatif.omv&rdquo;:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image36.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">omv files are opened by jamovi and there is one vulnerability in jamovi software
+            where the column name is vulnerable to XSS.</span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/g33xter/CVE-2021-28079&amp;sa=D&amp;source=editors&amp;ust=1659521119027901&amp;usg=AOvVaw2IWu5e6BofMQsAUOZiKUiq">https://github.com/g33xter/CVE-2021-28079</a></span><span
+            class="c5">&nbsp;</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">We unzip the Whatif.omv and find the metadata.json file and edit the column name
+            field with a powershell reverse shell using our earlier payload of shell.ps1 :</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image8.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">In the sploit.js in the www directory of python3 http.server we write this payload
+            which will be called by the jamovi XSS and we&rsquo;ll get the shell</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 607.78px; height: 341.94px;"><img
+                alt="" src="anubisimages/image35.png"
+                style="width: 607.78px; height: 341.94px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We now put the Whatif.omv file back in the smbclient after zipping it by executing
+            zip -r </span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="anubisimages/image38.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image48.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">We can see that the user on the main machine has clicked on the payload and out
+            script has been fetched and executed</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image59.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">And on port 9001 we have a powershell connection on our netcat listener:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image53.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Now we&rsquo;ll try privilege escalation using certificate exploitation:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">It seems that we are in webdevelopers group </span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image14.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Now we&rsquo;ll download </span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/Flangvik/SharpCollection&amp;sa=D&amp;source=editors&amp;ust=1659521119029796&amp;usg=AOvVaw1RXcxOwLLoj9XBNwwE5GXS">https://github.com/Flangvik/SharpCollection</a></span><span
+            class="c5">&nbsp;get Certify.exe and Rubeus.exe from NetFramework_4.5_Any</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image46.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Getting the user flag from Desktop:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image29.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We copy Certify and Rubeus to the Windows machine now.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image24.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image50.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">And also PowerView.ps1 and ADCS.ps1</span></p>
+    <p class="c0"><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1&amp;sa=D&amp;source=editors&amp;ust=1659521119030896&amp;usg=AOvVaw1NH1yJnVAe35XhoUX6gyTA">https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1</a></span>
+    </p>
+    <p class="c0"><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/cfalta/PoshADCS/blob/master/ADCS.ps1&amp;sa=D&amp;source=editors&amp;ust=1659521119031234&amp;usg=AOvVaw3XT-r2ygZkPSiWvW_2aoff">PoshADCS/ADCS.ps1
+                at master</a></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image15.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image47.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Using PowerView.ps1 get the information on the user </span><span
+            class="c5">localadmin</span><span class="c1">:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image62.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image72.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Using Certify.exe now to find vulnerabilities of the current user&rsquo;s
+            certificate.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image18.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">We don&#39;t find any vulnerable Certificates but the Certificate Template
+            &ldquo;Web&rdquo; has some permissions we can edit as the group webdevelopers have full control over the
+            certificate and our current user diegocruz is in that group and also &nbsp;this certificate is used for
+            server authentication so we can impersonate Admin and get access.</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">In ADCS.ps1 edit the $TargetUPN to $user.samaccountname.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image61.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">And then get the ADCS.ps1 script:</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image73.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Now using Get-SmartCardCertificate as it allows you to get a Smartcard Certificate
+            from a Windows Enterprise CA for a specified user account by rewriting an arbitrary certificate template
+            that the executing user has write access on.</span></p>
+    <p class="c0"><span class="c1">This can be used as a method of domain wide privilege escalation (think domain admin)
+            as well as a long-term persistence method. This script heavily relies on PowerView by Will Schroeder.</span>
+    </p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="anubisimages/image41.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">After executing this the malicious certificate would have been created.</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 591.50px; height: 332.72px;"><img
+                alt="" src="anubisimages/image22.png"
+                style="width: 591.50px; height: 332.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Now we get the malicious certificate, so using rubeus.exe and passing the certificate
+            as argument</span></p>
+    <p class="c0"><span class="c1">We pass in user as Administrator as we want the credentials of the admin user and
+            also our malicious certificate with the payload to get us the authentication NTLM key of
+            Administrator.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 583.50px; height: 328.22px;"><img
+                alt="" src="anubisimages/image31.png"
+                style="width: 583.50px; height: 328.22px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">We get the NTLM Key Of the Adminstrator:</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image68.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c5">Now we&rsquo;ll use the psexec.py program, pass it the NTLM key, the user as
+            Administrator and the IP Address. </span><span class="c4"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/SecureAuthCorp/impacket/blob/master/examples/psexec.py&amp;sa=D&amp;source=editors&amp;ust=1659521119034169&amp;usg=AOvVaw3UxaRvQjw2iRkxYMrYtoaB">impacket/psexec.py
+                at master</a></span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="anubisimages/image6.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Finally got access as the Administrator!</span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Now we&rsquo;ll get the root flag.</span></p>
+    <p class="c0"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="anubisimages/image26.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c0 c3"><span class="c1"></span></p>
+</body>
+
+</html>

