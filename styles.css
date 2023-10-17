@@ -3,23 +3,25 @@ body {
     display: grid;
     height: 200vh;
     grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.2fr 2fr 2fr 0.5fr ;
-    grid-template-areas: 
-    "main_header main_header main_header"
-    "prof_attributes main_summary main_summary"
-    "prof_attributes resume_left resume_right"
-    "main_footer main_footer main_footer"
+    grid-template-rows: 0.2fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+        "main_header main_header main_header"
+        "prof_attributes main_summary main_summary"
+        "prof_attributes resume_left resume_right"
+        "main_footer main_footer main_footer"
     ;
     grid-gap: 0.5rem;
-  }
-.main_header{
+}
+
+.main_header {
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
     background-color: #2F2F3A;
     grid-area: main_header;
     color: white;
 }
-.main_summary{
+
+.main_summary {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 20px 20px;
@@ -27,63 +29,119 @@ body {
     border-radius: 15px;
     background-color: #323535;
     grid-area: main_summary;
-    }
-.personal_profile{
-    
 }
-.education{
-    
+.name_photo{
+    background-color: #797979;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
-.education_box{
+.personal_profile {}
+
+.education {}
+
+.education_box {
     display: flex;
     flex-direction: column;
     background-color: #484756;
     margin: 20px;
     padding: 15px 15px 15px 15px;
 }
-.prof_attributes{
+
+.prof_attributes {
     padding: 10px 10px 10px 10px;
     color: white;
     border-radius: 15px;
     background-color: #272727;
     grid-area: prof_attributes;
-  }
-  .resume_left{
+}
+
+.resume_left {
     padding: 10px 10px 10px 10px;
     color: white;
     border-radius: 15px;
     background-color: #323535;
     grid-area: resume_left;
-  }
-  .resume_right{
+}
+
+.work_exp {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        list-style: none;
+        /* Remove default bullets */
+    }
+
+    ul li::before {
+        content: "\2022";
+        /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FFFFFF;
+        /* Change the color */
+        font-weight: bold;
+        /* If you want it to be bold */
+        display: inline-block;
+        /* Needed to add space between the bullet and the text */
+        width: 1em;
+        /* Also needed for space (tweak if needed) */
+        margin-left: -1em;
+        /* Also needed for space (tweak if needed) */
+    }
+}
+
+.volunteer {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume_right {
+    display: flex;
+    flex-direction: column;
     padding: 10px 10px 10px 10px;
     color: white;
     border-radius: 15px;
     background-color: #323535;
     grid-area: resume_right;
+    ul {
+        list-style: none; /* Remove default bullets */
+      }
+      
+      ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #FFFFFF; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
 }
-.main_footer{
+
+.main_footer {
     padding: 10px 10px 10px 10px;
     color: white;
     border-radius: 15px;
     background-color: #000000;
     grid-area: main_footer;
-  }
+}
 
 
 
-  @media only screen and (max-width: 550px){
-    body{
+@media only screen and (max-width: 550px) {
+    body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 3fr 2fr 0.5fr;
-        grid-template-areas: 
-        "main_header"
-        "main_summary"
-        "prof_attributes"
-        "resume_left"
-        "resume_right"
-        "main_footer"
+        grid-template-areas:
+            "main_header"
+            "main_summary"
+            "prof_attributes"
+            "resume_left"
+            "resume_right"
+            "main_footer"
         ;
     }
-  }
+}
