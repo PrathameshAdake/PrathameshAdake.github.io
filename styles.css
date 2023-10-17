@@ -1,24 +1,89 @@
 body {
-    background-color: #2B2832;
+    background-color: #424445;
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 2fr 0.5fr ;
+    grid-template-areas: 
+    "main_header main_header main_header"
+    "prof_attributes main_summary main_summary"
+    "prof_attributes resume_left resume_right"
+    "main_footer main_footer main_footer"
+    ;
+    grid-gap: 0.5rem;
   }
-  .main_header{
+.main_header{
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
     background-color: #2F2F3A;
-  }
-  .main_body{
-    background-color: #38353A;
-  }
-  .left_side_div{
+    grid-area: main_header;
+    color: white;
+}
+.main_summary{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    border-radius: 15px;
+    background-color: #323535;
+    grid-area: main_summary;
+    }
+.personal_profile{
     
+}
+.education{
+    
+}
+.education_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #484756;
+    margin: 20px;
+    padding: 15px 15px 15px 15px;
+}
+.prof_attributes{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 15px;
+    background-color: #272727;
+    grid-area: prof_attributes;
   }
-  .right_side_div{
-
+  .resume_left{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 15px;
+    background-color: #323535;
+    grid-area: resume_left;
   }
-  .main_footer{
+  .resume_right{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 15px;
+    background-color: #323535;
+    grid-area: resume_right;
+}
+.main_footer{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 15px;
     background-color: #000000;
+    grid-area: main_footer;
   }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
+
+
+
+  @media only screen and (max-width: 550px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 3fr 2fr 0.5fr;
+        grid-template-areas: 
+        "main_header"
+        "main_summary"
+        "prof_attributes"
+        "resume_left"
+        "resume_right"
+        "main_footer"
+        ;
+    }
   }
