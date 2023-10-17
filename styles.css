@@ -18,14 +18,14 @@ body {
     border-radius: 15px;
     background-color: #2F2F3A;
     grid-area: main_header;
-    color: white;
+    color: #E4E4E4;
 }
 
 .main_summary {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 20px 20px;
-    color: white;
+    color: #E4E4E4;
     border-radius: 15px;
     background-color: #323535;
     grid-area: main_summary;
@@ -33,6 +33,7 @@ body {
 .name_photo{
     background-color: #797979;
     display: flex;
+    color: #FFFFFF;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 20px;
@@ -54,15 +55,50 @@ body {
 
 .prof_attributes {
     padding: 10px 10px 10px 10px;
-    color: white;
+    color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
     background-color: #272727;
     grid-area: prof_attributes;
 }
 
+.prof_phot_and_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    img {
+        border-radius: 50%;
+    }
+}
+
+.biographicc{
+    color: #E4E4E4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    ul {
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+    }
+    ul li{
+        display: flex;
+        justify-content:space-between;
+    }
+    span {
+        font-size: 10;
+    }
+    h5 {
+        margin: 0;
+    }
+}
+
 .resume_left {
     padding: 10px 10px 10px 10px;
-    color: white;
+    color: #E4E4E4;
     border-radius: 15px;
     background-color: #323535;
     grid-area: resume_left;
@@ -80,7 +116,7 @@ body {
     ul li::before {
         content: "\2022";
         /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: #FFFFFF;
+        color: #E4E4E4;
         /* Change the color */
         font-weight: bold;
         /* If you want it to be bold */
@@ -102,7 +138,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 10px 10px;
-    color: white;
+    color: #E4E4E4;
     border-radius: 15px;
     background-color: #323535;
     grid-area: resume_right;
@@ -112,7 +148,7 @@ body {
       
       ul li::before {
         content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: #FFFFFF; /* Change the color */
+        color: #E4E4E4; /* Change the color */
         font-weight: bold; /* If you want it to be bold */
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1em; /* Also needed for space (tweak if needed) */
@@ -122,7 +158,7 @@ body {
 
 .main_footer {
     padding: 10px 10px 10px 10px;
-    color: white;
+    color: #E4E4E4;
     border-radius: 15px;
     background-color: #000000;
     grid-area: main_footer;
